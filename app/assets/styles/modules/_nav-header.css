@@ -1,0 +1,53 @@
+.nav-header {
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 2%;
+  background: #e0ebe8;
+
+  @mixin atMedium {
+
+  }
+
+  @mixin atLarge {
+    padding: 2% 25%;
+  }
+
+
+
+  img {
+    width: 80px;
+    display: none;
+    @mixin atMedium {
+      display: block;
+    }
+  }
+
+  ul {
+    float: right;
+    list-style: none;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: end;
+    display: none;
+
+    @mixin atMedium {
+      display: grid;
+    }
+
+    @mixin atLarge {
+      width: 100%;
+    }
+  }
+
+  li a {
+    color: #4ab19a;
+    font-size: 1.1rem;
+  }
+
+  li a:hover {
+    color: #000;
+    text-decoration: none;
+  }
+}

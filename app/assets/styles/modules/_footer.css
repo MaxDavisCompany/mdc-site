@@ -1,0 +1,39 @@
+.footer {
+  background: #c5ded7;
+  padding: 0 0;
+
+  @mixin atMedium {
+    padding: 3% 25%;
+  }
+
+  &__contact-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 5%;
+
+    @mixin atMedium {
+      padding: 3% 30%;
+    }
+
+    a {
+      color: #4ab19a;
+      font-size: 1.2rem;
+      font-family: raleway;
+      text-align: center;
+    }
+
+    a:hover {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+
+  &__copyright {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    font-family: raleway;
+    font-size: .9rem;
+
+  }
+}

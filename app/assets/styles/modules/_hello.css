@@ -1,0 +1,28 @@
+.hello {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 10% 5%;
+
+  @mixin atMedium {
+  padding: 5%;
+  }
+
+  h1 {
+    text-align: center;
+    color: #4ab19a;
+  }
+
+  p {
+  text-align: center;
+  word-wrap: break-word;
+  width: 400px;
+  justify-self: center;
+  }
+
+  img {
+    width: 150px;
+    justify-self: center;
+  }
+
+}

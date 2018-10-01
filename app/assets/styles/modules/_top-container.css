@@ -1,0 +1,65 @@
+.top-container {
+  padding: 0 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  background: #e0ebe8;
+
+  @mixin atMedium {
+    padding: 0 25%;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  h1 {
+    position: absolute;
+    top: 6%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: #4ab19a;
+
+    @mixin atSmall {
+      top: 12%;
+      font-size: 3.6rem;
+    }
+
+    @mixin atMedium {
+      font-size: 4.2rem;
+      top: 12%;
+    }
+
+    @mixin atLarge {
+      font-size: 4.8rem;
+      top: 15%;
+    }
+  }
+
+  p {
+    position: absolute;
+    top: 16%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.1rem;
+    color: #4ab19a;
+
+    @mixin atSmall {
+    top: 25%;
+    font-size: 1.2rem;
+    }
+
+    @mixin atMedium {
+      font-size: 1rem;
+      top: 25%;
+    }
+
+    @mixin atLarge {
+      font-size: 1.3rem;
+      top: 32%;
+    }
+  }
+
+}
