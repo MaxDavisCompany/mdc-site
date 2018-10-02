@@ -5,8 +5,13 @@
   padding: 10% 0;
 
   @mixin atMedium {
-  padding: 0 0;
+  padding: 2% 565px;
   margin-bottom: 50px;
+  }
+
+  &__contact {
+    padding: 0 0;
+    
   }
 
   h1 {

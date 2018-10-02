@@ -43,9 +43,9 @@ $(document).ready(function(){
             </div>
           </div>
         <ul>
-          <li class="nav-item active"><a href="index.html">About</a></li>
+          <li class="nav-item"><a href="index.html">About</a></li>
           <li class="nav-item"><a href="portfolio.html">Work</a></li>
-          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <li class="nav-item active"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
       </div>
@@ -53,52 +53,38 @@ $(document).ready(function(){
     </header>
 
     <!--Top Container Section-->
-    <section class="top-container">
-
-<picture>
-  	<source media="(min-width: 800px)" srcset="assets/images/sean-halpin-mockup-1.png">
-  	<img srcset="assets/images/sean-halpin-mockup-1-mobile.png">
-  </picture>
+    <section class="top-container top-container__contact">
 
 
-      <h1>I'm Max.</h1>
-      <p>a web developer.</p>
+
+      <h1>Contact</h1>
+
     </section>
 
     <!--Hello Section-->
-    <section class="hello">
-      <img src="assets/images/flat-person-glasses.png">
-      <h1>Hi.</h1>
-      <p>I'm a web developer / designer based in Buffalo, New York. I have a passion for web design and love to create for web and mobile devices.</p>
+    <section class="hello hello__contact">
+      <h1>Have a question or want to work together?</h1>
     </section>
 
-    <!--About Section-->
-    <section class="about">
-      <h1>What I can do.</h1>
-      <div class="photoshop">
-        <div>
-      <img src="assets/images/photoshop.png">
-      </div>
-      <div>
-      <h3>Design what you want.</h3>
-      <p>I like to keep it simple. My goals are to focus on typography, content and conveying the message that you want to send.</p>
-      </div>
-      </div>
+    <!--Contact Form Sectioni -->
+    <section class="contact-form">
+      <form>
+          <!-- TEXT FIELD GROUPS -->
+          <div class="form-group">
 
-      <div class="coder">
-        <div>
-      <h3>Develop what you need.</h3>
-      <p>I'm a developer, so I know how to create your website to run across devices using the latest technologies available.</p>
-      </div>
-      <div>
-  <img src="assets/images/html.png">
-  </div>
-    </div>
-
+              <input class="form-control" type="text" id="name" placeholder="Name">
+          </div>
+          <div class="form-group">
+              <input class="form-control" type="email" id="email" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <input class="form-control" type="text" id="message" placeholder="Your Message">
+          </div>
+        </form>
     </section>
 
 <!--FOOTER -->
-<section class="footer">
+<section class="footer footer__contact-form">
   <div class="footer__contact-info">
   <a href="#">facebook</a>
   <a href="#">instagram</a>

@@ -15,6 +15,7 @@
       padding: 3% 30%;
     }
 
+
     a {
       color: #4ab19a;
       font-size: 1.2rem;
@@ -35,5 +36,16 @@
     font-family: raleway;
     font-size: .9rem;
 
+  }
+
+  &__contact-form {
+    padding: 0;
+
+    @mixin atSmall {
+      padding: 40px;
+    }
+    @mixin atMedium {
+      padding: 40px;
+    }
   }
 }

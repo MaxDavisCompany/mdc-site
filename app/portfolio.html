@@ -16,6 +16,8 @@
 <script type="text/javascript">
 $(document).ready(function(){
   $('.icon').click(function(){
+    $(this).find("i").toggleClass("fas fa-times")
+    .toggleClass("fas fa-bars")
     $('.icon').toggleClass('active')
       $('ul').slideToggle();
 
@@ -35,10 +37,15 @@ $(document).ready(function(){
       </div>
       <div>
       <nav>
+        <div class="toggle">
+          <div class="icon">
+            <i class="fas fa-bars fa-2x"></i>
+            </div>
+          </div>
         <ul>
           <li class="nav-item"><a href="index.html">About</a></li>
-          <li class="nav-item active"><a href="portfolio.html">Work</a></li>
-          <li class="nav-item"><a href="#products">Contact</a></li>
+          <li class="nav-item active"><a href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
       </div>
@@ -52,7 +59,7 @@ $(document).ready(function(){
         	<img srcset="assets/images/sean-halpin-blank-1-mobile.png">
         </picture>
 
-    <h1>Work</h1>
+    <h1>My Work</h1>
     </section>
 
     <!--Hello Section-->

@@ -4,6 +4,7 @@
   grid-template-columns: repeat(2, 1fr);
   padding-top: 2%;
   background: #e0ebe8;
+  z-index: 2;
 
   @mixin atMedium {
 
@@ -13,39 +14,62 @@
     padding: 2% 25%;
   }
 
+
+
   img {
-    width: 80px;
-    display: none;
+    width: 65px;
+
     @mixin atMedium {
-      display: block;
+    width: 80px;
     }
   }
 
   ul {
-    float: right;
-    list-style: none;
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: end;
+
+    display: none;
+    background: #fff;
+    float: none;
+    position: absolute;
 
 
     @mixin atMedium {
       display: grid;
+      float: right;
+      list-style: none;
+      background: none;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+
     }
 
-    @mixin atLarge {
-      width: 100%;
-    }
   }
 
   li a {
     color: #4ab19a;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    padding-right: 30px;
+    font-family: raleway;
+
+
   }
 
   li a:hover {
     color: #000;
     text-decoration: none;
+  }
+
+  .active {
+    display: block;
+  }
+
+  .toggle {
+    display: none;
+  }
+
+  @media (max-width: 800px) {
+    .toggle {
+      display: block;
+    }
   }
 }
