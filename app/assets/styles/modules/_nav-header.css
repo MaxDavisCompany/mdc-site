@@ -13,8 +13,6 @@
     padding: 2% 25%;
   }
 
-
-
   img {
     width: 80px;
     display: none;
@@ -30,7 +28,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: end;
-    display: none;
+
 
     @mixin atMedium {
       display: grid;

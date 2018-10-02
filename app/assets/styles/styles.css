@@ -6,3 +6,7 @@
 @import "modules/_hello";
 @import "modules/_about";
 @import "modules/_footer";
+@import "modules/_top-container__portfolio";
+@import "modules/_portfolio";
+@import "modules/_btn";
+@import "modules/_freelance";

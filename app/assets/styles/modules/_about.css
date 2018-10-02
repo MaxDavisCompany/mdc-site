@@ -3,7 +3,8 @@
   padding: 0 5%;
 
   @mixin atMedium {
-  padding: 7% 28%;
+  padding: 0 28%;
+  margin-top: 100px;
   }
 
 img {

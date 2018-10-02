@@ -1,0 +1,17 @@
+.btn {
+  color: #fff;
+  padding: 8px 35px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  background: #2b3d51;
+
+  &__seafoam {
+    background: #45b29a;
+    color: #1b7f69;
+  }
+}
+
+.btn:hover {
+  background: #000;
+  color: #fff;
+}

@@ -2,22 +2,29 @@
   background: #fff;
   display: grid;
   grid-template-columns: 1fr;
-  padding: 10% 5%;
+  padding: 10% 0;
 
   @mixin atMedium {
-  padding: 5%;
+  padding: 0 0;
+  margin-bottom: 50px;
   }
 
   h1 {
     text-align: center;
     color: #4ab19a;
+    font-size: 1.7rem;
   }
 
   p {
   text-align: center;
   word-wrap: break-word;
-  width: 400px;
   justify-self: center;
+  padding: 0 50px;
+
+  @mixin atMedium {
+  padding: 0 200px;
+  }
+
   }
 
   img {
