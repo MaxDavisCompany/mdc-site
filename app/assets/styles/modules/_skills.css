@@ -1,0 +1,97 @@
+.skills {
+  display: grid;
+  margin-bottom: 20px;
+
+  .icon-section {
+   display: grid;
+   grid-template-columns: repeat(1, 1fr);
+   grid-gap: 10px;
+   padding: 0 2%;
+
+   @mixin atSmall {
+   grid-template-columns: repeat(2, 1fr);
+   padding: 0 5%;
+   }
+
+   @mixin atMedium {
+   grid-template-columns: repeat(4, 1fr);
+   grid-gap: 20px;
+   padding: 0 3%;
+   }
+
+   @mixin atLarge {
+     padding: 0 5%;
+   }
+   @mixin atExtraLarge {
+     padding: 0 20%;
+   }
+
+
+  img {
+    width: 100%;
+    padding: 0 15%;
+    @mixin atSmall {
+      padding: 0 0;
+    }
+    @mixin atMedium {
+      padding: 0 0;
+    }
+    @mixin atLarge {
+      padding: 0 30px;
+    }
+  }
+
+  h4 {
+  text-align: center;
+  font-family: raleway;
+  font-weight: 700;
+  }
+
+  p {
+    text-align: center;
+    font-family: raleway;
+  }
+}
+
+  .photo-progress-section {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0 5%;
+    @mixin atMedium {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    img {
+      width: 100%;
+      @mixin atSmall {
+      padding: 0 20%;
+      }
+    }
+
+    h3 {
+      font-size: 1.1rem;
+      font-family: raleway;
+      font-weight: 700;
+      padding: 2% 0;
+    }
+
+    h4 {
+      font-family: raleway;
+      font-weight: 700;
+      text-align: center;
+      padding-top: 2%;
+    }
+
+    p {
+      font-family: raleway;
+      text-align: center;
+      line-height: 1.8;
+      padding: 0 20px;
+
+      @mixin atMedium {
+        padding: 0 100px;
+      }
+    }
+  }
+}

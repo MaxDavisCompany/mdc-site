@@ -1122,3 +1122,144 @@ body {
 .top-container__contact {
   padding-bottom: 150px;
 }
+
+.skills {
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 20px;
+}
+
+.skills .icon-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px;
+  padding: 0 2%;
+}
+
+@media (min-width: 530px) {
+
+  .skills .icon-section {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    padding: 0 5%;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .skills .icon-section {
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 0 3%;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .skills .icon-section {
+    padding: 0 5%;
+  }
+}
+
+@media (min-width: 1500px) {
+
+  .skills .icon-section {
+    padding: 0 20%;
+  }
+}
+
+.skills .icon-section img {
+  width: 100%;
+  padding: 0 15%;
+}
+
+@media (min-width: 530px) {
+
+  .skills .icon-section img {
+    padding: 0 0;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .skills .icon-section img {
+    padding: 0 0;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .skills .icon-section img {
+    padding: 0 30px;
+  }
+}
+
+.skills .icon-section h4 {
+  text-align: center;
+  font-family: raleway;
+  font-weight: 700;
+}
+
+.skills .icon-section p {
+  text-align: center;
+  font-family: raleway;
+}
+
+.skills .photo-progress-section {
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+  padding: 0 5%;
+}
+
+@media (min-width: 800px) {
+
+  .skills .photo-progress-section {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.skills .photo-progress-section img {
+  width: 100%;
+}
+
+@media (min-width: 530px) {
+
+  .skills .photo-progress-section img {
+    padding: 0 20%;
+  }
+}
+
+.skills .photo-progress-section h3 {
+  font-size: 1.1rem;
+  font-family: raleway;
+  font-weight: 700;
+  padding: 2% 0;
+}
+
+.skills .photo-progress-section h4 {
+  font-family: raleway;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 2%;
+}
+
+.skills .photo-progress-section p {
+  font-family: raleway;
+  text-align: center;
+  line-height: 1.8;
+  padding: 0 20px;
+}
+
+@media (min-width: 800px) {
+
+  .skills .photo-progress-section p {
+    padding: 0 100px;
+  }
+}
