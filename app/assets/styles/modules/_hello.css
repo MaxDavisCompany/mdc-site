@@ -5,19 +5,20 @@
   padding: 10% 0;
 
   @mixin atMedium {
-  padding: 2% 565px;
+  padding: 2% 0;
   margin-bottom: 50px;
   }
 
   &__contact {
     padding: 0 0;
-    
+
   }
 
   h1 {
     text-align: center;
-    color: #4ab19a;
+    color: #25797c;
     font-size: 1.7rem;
+    font-weight: 300;
   }
 
   p {

@@ -1,28 +1,13 @@
 .nav-header {
-  padding: 0 10%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  padding: 0 0%;
   padding-top: 2%;
-  background: #e0ebe8;
+  background: #cceaea;
   z-index: 2;
 
-  @mixin atMedium {
-
-  }
-
   @mixin atLarge {
-    padding: 2% 25%;
+    padding: 2% 20%;
   }
 
-
-
-  img {
-    width: 65px;
-
-    @mixin atMedium {
-    width: 80px;
-    }
-  }
 
   ul {
 
@@ -33,20 +18,21 @@
 
 
     @mixin atMedium {
-      display: grid;
       float: right;
       list-style: none;
       background: none;
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       justify-items: center;
+      position: absolute;
+      right: 400px;
 
     }
 
   }
 
   li a {
-    color: #4ab19a;
+    color: #25797c;
     font-size: 1.2rem;
     padding-right: 30px;
     font-family: raleway;

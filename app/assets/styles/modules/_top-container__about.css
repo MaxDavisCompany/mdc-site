@@ -1,4 +1,4 @@
-.top-container__portfolio {
+.top-container__about {
   padding: 0 0;
   display: grid;
   grid-template-columns: 1fr;
@@ -7,10 +7,6 @@
   @mixin atMedium {
     padding: 0 20%;
     margin-bottom: 50px;
-  }
-
-  img {
-    width: 100%;
   }
 
   h1 {
@@ -40,5 +36,7 @@
     }
   }
 
-
+  img {
+    width: 100%;
+  }
 }
