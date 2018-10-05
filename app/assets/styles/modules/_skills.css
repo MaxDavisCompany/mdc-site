@@ -2,11 +2,14 @@
   display: grid;
   margin-bottom: 20px;
 
+
   .icon-section {
    display: grid;
    grid-template-columns: repeat(1, 1fr);
    grid-gap: 10px;
    padding: 0 2%;
+   overflow-y: hidden;
+   
 
    @mixin atSmall {
    grid-template-columns: repeat(2, 1fr);

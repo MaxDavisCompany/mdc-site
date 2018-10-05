@@ -1,7 +1,8 @@
 .icon {
   cursor: pointer;
-  position: absolute;
   float: right;
   left: 88%;
   color: #25797c;
+  padding-right: 4%;
+  position: sticky;
 }

@@ -3,11 +3,11 @@
   padding: 8px 35px;
   font-size: 1.1rem;
   font-weight: 300;
-  background: #2b3d51;
+  background: #25797c;
 
   &__seafoam {
-    background: #45b29a;
-    color: #1b7f69;
+    background: #cceaea;
+    color: #25797c;
   }
 }
 

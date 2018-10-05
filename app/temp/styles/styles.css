@@ -428,60 +428,112 @@ body {
 
 * {
     overflow-x: hidden;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-header {
-  padding: 0 0%;
-  padding-top: 2%;
-  background: #cceaea;
-  z-index: 2;
+  padding-top: 4px;
+  background-color: #cceaea;
+  z-index: 5;
+
+
 }
 
-@media (min-width: 1200px) {
-
-  .nav-header {
-    padding: 2% 20%;
-  }
-}
-
-.nav-header ul {
-  display: none;
-  background: #fff;
-  float: none;
-  position: absolute;
+.nav-header nav {
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  transition: all 0.5s ease;
+  z-index: 5;
 }
 
 @media (min-width: 800px) {
 
-  .nav-header ul {
-    float: right;
-    list-style: none;
-    background: none;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
-    -ms-grid-column-align: center;
-        justify-items: center;
-    position: absolute;
-    right: 400px;
+  .nav-header nav {
+    position: fixed;
+    background: #cceaea;
   }
 }
 
-.nav-header li a {
-  color: #25797c;
-  font-size: 1.2rem;
-  padding-right: 30px;
-  font-family: raleway;
+.nav-header nav.hidden {
+  transform: translate3d(0, -120%, 0);
 }
 
-.nav-header li a:hover {
-  color: #000;
+.nav-header nav ul {
+  display: none;
+  background: #fff;
+  float: none;
+  font-size: 2.9rem;
+  position: relative;
+}
+
+@media (min-width: 800px) {
+
+  .nav-header nav ul {
+    display: inline-block;
+    background: none;
+    float: right;
+    right: 300px;
+    font-size: .2rem;
+    padding: 0;
+  }
+}
+
+.nav-header nav ul li {
+  display: inline-block;
+  margin-right: 60px;
+  padding: 0 0;
+}
+
+@media (min-width: 800px) {
+
+  .nav-header nav ul li {
+    padding: 20px 0;
+  }
+}
+
+.nav-header nav ul li:last-child {
+  margin-right: 0;
+}
+
+.nav-header nav ul li a {
   text-decoration: none;
+  text-transform: uppercase;
+  color: #25797c;
+  font-family: raleway;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 10px;
+  padding-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  padding: 0 0;
+}
+
+@media (min-width: 800px) {
+
+  .nav-header nav ul li a {
+    position: static;
+    left: 0;
+    padding-top: 20px;
+    margin: 0;
+    display: inline-block;
+    padding: 0;
+  }
+}
+
+.nav-header nav ul li a:hover {
+  color: #000;
+  font-weight: 500;
 }
 
 .nav-header .active {
-  display: block;
+  display: inline-block;
+  font-weight: 700;
 }
 
 .nav-header .toggle {
@@ -548,7 +600,7 @@ body {
 
   .top-container h1 {
     font-size: 4.2rem;
-    top: 8%;
+    top: 5%;
   }
 }
 
@@ -556,13 +608,13 @@ body {
 
   .top-container h1 {
     font-size: 4.8rem;
-    top: 10%;
+    top: 7%;
   }
 }
 
-.top-container p {
+.top-container p2 {
   position: absolute;
-  top: 13%;
+  padding-top: 50px;
   left: 0;
   width: 100%;
   text-align: center;
@@ -573,25 +625,25 @@ body {
 
 @media (min-width: 530px) {
 
-  .top-container p {
-    top: 20%;
+  .top-container p2 {
+    padding-top: 120px;
     font-size: 1.7rem;
   }
 }
 
 @media (min-width: 800px) {
 
-  .top-container p {
+  .top-container p2 {
+    padding-top: 150px;
     font-size: 1.8rem;
-    top: 23%;
   }
 }
 
 @media (min-width: 1200px) {
 
-  .top-container p {
-    font-size: 2rem;
-    top: 28%;
+  .top-container p2 {
+    padding-top: 180px;
+    margin-top: 20px;
   }
 }
 
@@ -646,6 +698,7 @@ body {
 .about {
   background: #fff;
   padding: 0 5%;
+  overflow-y: hidden;
 
 }
 
@@ -741,8 +794,10 @@ body {
 
 .footer {
   background: #cceaea;
-  padding: 0 0;
+  padding: 3% 2%;
 }
+
+@media (min-width: 530px) {}
 
 @media (min-width: 800px) {
 
@@ -762,7 +817,14 @@ body {
 @media (min-width: 800px) {
 
   .footer__contact-info {
-    padding: 3% 30%;
+    padding: 3% 15%;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .footer__contact-info {
+    padding: 3% 20%;
   }
 }
 
@@ -963,17 +1025,21 @@ body {
   margin-top: 30px;
 }
 
+.portfolio * {
+  overflow-y: hidden;
+}
+
 .btn {
   color: #fff;
   padding: 8px 35px;
   font-size: 1.1rem;
   font-weight: 300;
-  background: #2b3d51;
+  background: #25797c;
 }
 
 .btn__seafoam {
-  background: #45b29a;
-  color: #1b7f69;
+  background: #cceaea;
+  color: #25797c;
 }
 
 .btn:hover {
@@ -1082,14 +1148,17 @@ body {
 
 .icon {
   cursor: pointer;
-  position: absolute;
   float: right;
   left: 88%;
   color: #25797c;
+  padding-right: 4%;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .contact-form {
   padding: 0 4%;
+  overflow-y: hidden;
 }
 
 @media (min-width: 530px) {
@@ -1116,6 +1185,23 @@ body {
   }
 }
 
+.contact-form .btn {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (min-width: 800px) {
+
+  .contact-form .btn {
+    margin: 0 100px;
+    margin-bottom: 0;
+  }
+}
+
 #message {
   padding-bottom: 150px;
 }
@@ -1127,7 +1213,6 @@ body {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   background: #cceaea;
-
 
 }
 
@@ -1145,7 +1230,7 @@ body {
 
 .top-container__portfolio h1 {
   position: absolute;
-  top: 6%;
+  top: 2%;
   left: 0;
   width: 100%;
   text-align: center;
@@ -1157,7 +1242,7 @@ body {
 @media (min-width: 530px) {
 
   .top-container__portfolio h1 {
-    top: 12%;
+    top: 8%;
     font-size: 3.6rem;
   }
 }
@@ -1166,7 +1251,7 @@ body {
 
   .top-container__portfolio h1 {
     font-size: 4.2rem;
-    top: 12%;
+    top: 5%;
   }
 }
 
@@ -1174,7 +1259,7 @@ body {
 
   .top-container__portfolio h1 {
     font-size: 4.8rem;
-    top: 15%;
+    top: 7%;
   }
 }
 
@@ -1197,7 +1282,7 @@ body {
 
 .top-container__about h1 {
   position: absolute;
-  top: 6%;
+  top: 2%;
   left: 0;
   width: 100%;
   text-align: center;
@@ -1210,7 +1295,7 @@ body {
 @media (min-width: 530px) {
 
   .top-container__about h1 {
-    top: 12%;
+    top: 8%;
     font-size: 3.6rem;
   }
 }
@@ -1219,7 +1304,7 @@ body {
 
   .top-container__about h1 {
     font-size: 4.2rem;
-    top: 12%;
+    top: 5%;
   }
 }
 
@@ -1227,7 +1312,7 @@ body {
 
   .top-container__about h1 {
     font-size: 4.8rem;
-    top: 15%;
+    top: 7%;
   }
 }
 
@@ -1248,6 +1333,7 @@ body {
       grid-template-columns: repeat(1, 1fr);
   grid-gap: 10px;
   padding: 0 2%;
+  overflow-y: hidden;
 }
 
 @media (min-width: 530px) {

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
 <link rel="stylesheet" href="temp/styles/styles.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 <!--jquery for hamburger-->
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript">
@@ -47,6 +48,7 @@ $(document).ready(function(){
           <li class="nav-item active"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="content"></div>
       </div>
 
     </header>
@@ -54,57 +56,83 @@ $(document).ready(function(){
     <!--Top Container Section-->
     <section class="top-container top-container__contact">
       <picture>
-          <source media="(min-width: 800px)" srcset="assets/images/mdc-polar-theme-2.jpg">
-          <img srcset="assets/images/mdc-polar-theme-2-mobile.png">
+          <source media="(min-width: 800px)" srcset="assets/images/mdc-polar-theme-2-balloons.jpg">
+          <img srcset="assets/images/mdc-polar-theme-2-balloons-mobile.jpg">
         </picture>
 
 
-      <h1>Contact</h1>
+      <h1 data-aos="slide-down" data-aos-duration="500">Contact</h1>
 
     </section>
 
     <!--Hello Section-->
     <section class="hello hello__contact">
-      <h1>Have a question or want to work together?</h1>
+      <h1 data-aos="fade-in" data-aos-duration="2000">Have a question or want to work together?</h1>
     </section>
 
     <!--Contact Form Sectioni -->
     <section class="contact-form">
       <form>
           <!-- TEXT FIELD GROUPS -->
-          <div class="form-group">
+          <div data-aos="slide-left" data-aos-duration="750"class="form-group">
 
               <input class="form-control" type="text" id="name" placeholder="Name">
           </div>
-          <div class="form-group">
+          <div data-aos="slide-right" data-aos-duration="750" class="form-group">
               <input class="form-control" type="email" id="email" placeholder="Enter email">
             </div>
-            <div class="form-group">
+            <div data-aos="slide-left" data-aos-duration="750" class="form-group">
               <input class="form-control" type="text" id="message" placeholder="Your Message">
           </div>
         </form>
+        <a data-aos="slide-up" data-aos-duration="750"href="#" class="btn">SEND</a>
     </section>
 
-<!--FOOTER -->
-<section class="footer footer__contact-form">
-  <div class="footer__contact-info">
-  <a href="#">facebook</a>
-  <a href="#">instagram</a>
-  <a href="#">hire me</a>
-</div>
-<div class="footer__copyright">
-  &copy;2018 Max Davis. All rights reserved.
-  </div>
-</section>
+    <!--FOOTER -->
+    <section class="footer">
+      <div class="footer__contact-info">
+      <a href="http://www.facebook.com/maxdaviscompany">facebook</a>
+      <a href="http://www.instagram.com/shoegazecity">instagram</a>
+      <a href="mailto:maxdaviscompany@gmail.com">hire me</a>
+    </div>
+    <div class="footer__copyright">
+      &copy;2018 Max Davis. All rights reserved.
+      </div>
+    </section>
 
 </div>
 
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      (function() {
+        var documentElem = $(document),
+        nav = $('nav'),
+        lastScrollTop = 0;
+
+    documentElem.on('scroll', function() {
+      var currentScrollTop = $(this).scrollTop();
+      //scroll down
+      if (currentScrollTop > lastScrollTop ) nav.addClass('hidden');
+      //scroll up
+      else nav.removeClass('hidden');
+
+      lastScrollTop = currentScrollTop;
+    });
+
+
+      })();
+    </script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 </html>

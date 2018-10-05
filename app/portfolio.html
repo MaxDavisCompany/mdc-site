@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
 <link rel="stylesheet" href="temp/styles/styles.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 <!--jquery for hamburger-->
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript">
@@ -43,10 +44,11 @@ $(document).ready(function(){
         <ul>
           <li class="nav-item"><a href="index.html">Home</a></li>
           <li class="nav-item"><a href="about.html">About</a></li>
-          <li class="nav-item active"><a href="portfolio.html">Portfolio</a></li>
+          <li class="nav-item active"><a href="portfolio.html">Work</a></li>
           <li class="nav-item"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="content"></div>
       </div>
 
     </header>
@@ -54,22 +56,22 @@ $(document).ready(function(){
     <!--Top Container Portfolio Section-->
     <section class="top-container__portfolio">
     <picture>
-      	<source media="(min-width: 800px)" srcset="assets/images/mdc-polar-theme-2.jpg">
-      	<img srcset="assets/images/mdc-polar-theme-2-mobile.png">
+      	<source media="(min-width: 800px)" srcset="assets/images/mdc-polar-theme-2-work.jpg">
+      	<img srcset="assets/images/mdc-polar-theme-2-work-mobile.jpg">
       </picture>
 
-    <h1>My Work</h1>
+    <h1 data-aos="flip-right" data-aos-duration="1000">My Work</h1>
     </section>
 
     <!--Hello Section-->
-    <section class="hello">
+    <section data-aos="zoom-in" data-aos-duration="400" class="hello">
       <img src="assets/images/pencil.svg">
       <h1>What I've been up to.</h1>
-      <p>Here's a selection of some recent work. For more up to the minute work you can visit me on my <a href="#">GitHub</a></p>
+      <p>Here's a selection of some recent work. To view my coding and other projects, you can visit me on my <a href="http://www.github.com/maxdaviscompany">GitHub</a></p>
     </section>
 
     <!--Portfolio Section-->
-    <section class="portfolio portfolio__green">
+    <section data-aos="slide-right" data-aos-offset="200" data-aos-duration="1000" class="portfolio portfolio__green">
     <img src="assets/images/site-screenshot.jpg">
     <h1>Table Reservation</h1>
     <h5>Interface Design / UI</h5>
@@ -77,7 +79,7 @@ $(document).ready(function(){
     <a href="#" class="btn">VIEW ON GITHUB</a>
     </section>
 
-    <section class="portfolio portfolio__red">
+    <section data-aos="slide-left" data-aos-offset="200" data-aos-duration="1000" class="portfolio portfolio__red">
     <img src="assets/images/site-screenshot.jpg">
     <h1>Employify</h1>
     <h5>WordPress Theme / UI</h5>
@@ -85,7 +87,7 @@ $(document).ready(function(){
     <a href="#" class="btn">VIEW ON GITHUB</a>
     </section>
 
-    <section class="portfolio portfolio__purple">
+    <section data-aos="slide-right" data-aos-offset="200" data-aos-duration="1000" class="portfolio portfolio__purple">
     <img src="assets/images/site-screenshot.jpg">
     <h1>Origami</h1>
     <h5>Web Design / UI</h5>
@@ -95,7 +97,7 @@ $(document).ready(function(){
 
 
 
-    <section class="portfolio portfolio__yellow">
+    <section data-aos="slide-left" data-aos-offset="200" data-aos-duration="1000" class="portfolio portfolio__yellow">
     <img src="assets/images/site-screenshot.jpg">
     <h1>Journey</h1>
     <h5>Web Design / UI / App Design</h5>
@@ -105,13 +107,13 @@ $(document).ready(function(){
 
 
 <!--freelance section-->
-<section class="freelance">
+<section data-aos="fade-right" data-aos-duration="1000" class="freelance">
   <div>
   <h1>I can help.</h1>
   <h5>I'm currently available for freelance work.</h5>
   <p>If you have a project that you want to get started, think you need my help with something or just fancy saying hey, then get in touch.</p>
   <div class="message-button">
-  <a href="#" class="btn btn__seafoam"><i class="far fa-envelope "></i>MESSAGE ME</a>
+  <a href="mailto:maxdaviscompany@gmail.com" class="btn btn__seafoam"><i class="far fa-envelope "></i>MESSAGE ME</a>
   </div>
   </div>
 </section>
@@ -123,9 +125,9 @@ $(document).ready(function(){
 <!--FOOTER -->
 <section class="footer">
   <div class="footer__contact-info">
-  <a href="#">facebook</a>
-  <a href="#">instagram</a>
-  <a href="#">hire me</a>
+  <a href="http://www.facebook.com/maxdaviscompany">facebook</a>
+  <a href="http://www.instagram.com/shoegazecity">instagram</a>
+  <a href="mailto:maxdaviscompany@gmail.com">hire me</a>
 </div>
 <div class="footer__copyright">
   &copy;2018 Max Davis. All rights reserved.
@@ -137,9 +139,34 @@ $(document).ready(function(){
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      (function() {
+        var documentElem = $(document),
+        nav = $('nav'),
+        lastScrollTop = 0;
+
+    documentElem.on('scroll', function() {
+      var currentScrollTop = $(this).scrollTop();
+      //scroll down
+      if (currentScrollTop > lastScrollTop ) nav.addClass('hidden');
+      //scroll up
+      else nav.removeClass('hidden');
+
+      lastScrollTop = currentScrollTop;
+    });
+
+
+      })();
+    </script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 </body>
 </html>

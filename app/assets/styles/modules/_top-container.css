@@ -36,18 +36,18 @@
 
     @mixin atMedium {
       font-size: 4.2rem;
-      top: 8%;
+      top: 5%;
     }
 
     @mixin atLarge {
       font-size: 4.8rem;
-      top: 10%;
+      top: 7%;
     }
   }
 
-  p {
+  p2 {
     position: absolute;
-    top: 13%;
+    padding-top: 50px;
     left: 0;
     width: 100%;
     text-align: center;
@@ -57,18 +57,20 @@
 
 
     @mixin atSmall {
-    top: 20%;
+    padding-top: 120px;
     font-size: 1.7rem;
     }
 
     @mixin atMedium {
+      padding-top: 150px;
       font-size: 1.8rem;
-      top: 23%;
+
     }
 
     @mixin atLarge {
-      font-size: 2rem;
-      top: 28%;
+      padding-top: 180px;
+      margin-top: 20px;
+
     }
   }
 

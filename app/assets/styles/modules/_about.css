@@ -1,6 +1,8 @@
 .about {
   background: #fff;
   padding: 0 5%;
+  overflow-y: hidden;
+
 
   @mixin atMedium {
   padding: 0 28%;

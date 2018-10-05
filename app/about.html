@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
     crossorigin="anonymous">
 <link rel="stylesheet" href="temp/styles/styles.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 <!--jquery for hamburger-->
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script type="text/javascript">
@@ -46,6 +47,7 @@ $(document).ready(function(){
           <li class="nav-item"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
+      <div class="content"></div>
       </div>
 
     </header>
@@ -54,11 +56,11 @@ $(document).ready(function(){
     <section class="top-container__about">
 
       <picture>
-        	<source media="(min-width: 800px)" srcset="assets/images/mdc-polar-theme-2.jpg">
-        	<img srcset="assets/images/mdc-polar-theme-2-mobile.png">
+        	<source media="(min-width: 800px)" srcset="assets/images/mdc-polar-theme-3-about.jpg">
+        	<img srcset="assets/images/mdc-polar-theme-2-about-mobile.jpg">
         </picture>
 
-  <h1>About Me</h1>
+  <h1 data-aos="zoom-out" data-aos-duration="1500">About</h1>
 </section>
 
 
@@ -69,25 +71,25 @@ $(document).ready(function(){
 
   <div class="icon-section">
 
-  <div>
+  <div data-aos="slide-right" data-aos-duration="1000">
   <img src="assets/images/icons/wifi-icon.png">
   <h4>Fast</h4>
     <p>Fast load times and lag free interaction, my highest priority.</p>
     </div>
 
-    <div>
+    <div data-aos="slide-left" data-aos-duration="1000">
   <img src="assets/images/icons/mobile-icon.png">
   <h4>Responsive</h4>
     <p>My layouts will work on any device, big or small.</p>
     </div>
 
-    <div>
+    <div data-aos="slide-right" data-aos-duration="1000">
   <img src="assets/images/icons/lightbulb-icon.png">
   <h4>Intuitive</h4>
     <p>Strong preference for easy to use, intuitive UX/UI.</p>
     </div>
 
-    <div>
+    <div data-aos="slide-left" data-aos-duration="1000">
   <img src="assets/images/icons/rocket-icon.png">
   <h4>Dynamic</h4>
     <p>Websites don't have to be static, I love making pages come to life.</p>
@@ -95,14 +97,14 @@ $(document).ready(function(){
     </div>
 
     <div class="photo-progress-section">
-      <div>
-      <img src="assets/images/matt-photo.png">
+      <div data-aos="slide-right" data-aos-duration="1000">
+      <img  src="assets/images/matt-photo.png">
       <h4>Who's this guy?</h4>
       <p>I'm the Front-End Developer for EyeCue Lab in Portland, OR.
       I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.
       Let's make something special.</p>
       </div>
-      <div>
+      <div data-aos="slide-left" data-aos-duration="1000">
         <h3>HTML</h3>
       <div class="progress">
           <div class="progress-bar bg-info progress-bar-striped
@@ -172,9 +174,9 @@ $(document).ready(function(){
 <!--FOOTER -->
 <section class="footer">
   <div class="footer__contact-info">
-  <a href="#">facebook</a>
-  <a href="#">instagram</a>
-  <a href="#">hire me</a>
+  <a href="http://www.facebook.com/maxdaviscompany">facebook</a>
+  <a href="http://www.instagram.com/shoegazecity">instagram</a>
+  <a href="mailto:maxdaviscompany@gmail.com">hire me</a>
 </div>
 <div class="footer__copyright">
   &copy;2018 Max Davis. All rights reserved.
@@ -186,10 +188,35 @@ $(document).ready(function(){
 
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      (function() {
+        var documentElem = $(document),
+        nav = $('nav'),
+        lastScrollTop = 0;
+
+    documentElem.on('scroll', function() {
+      var currentScrollTop = $(this).scrollTop();
+      //scroll down
+      if (currentScrollTop > lastScrollTop ) nav.addClass('hidden');
+      //scroll up
+      else nav.removeClass('hidden');
+
+      lastScrollTop = currentScrollTop;
+    });
+
+
+      })();
+    </script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
     crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
 
 
 </body>

@@ -1,5 +1,7 @@
 .contact-form {
   padding: 0 4%;
+  overflow-y: hidden;
+
 
   @mixin atSmall {
     padding: 0 7%;
@@ -14,6 +16,19 @@
   @mixin atLarge {
     padding: 0 35%;
     padding-bottom: 100px;
+  }
+
+  .btn {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 20px;
+    text-align: center;
+    @mixin atMedium {
+      margin: 0 100px;
+      margin-bottom: 0;
+    }
+
+
   }
 }
 

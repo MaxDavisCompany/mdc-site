@@ -15,7 +15,7 @@
 
   h1 {
     position: absolute;
-    top: 6%;
+    top: 2%;
     left: 0;
     width: 100%;
     text-align: center;
@@ -24,20 +24,19 @@
     font-family: 'raleway', sans-serif;
 
     @mixin atSmall {
-      top: 12%;
+      top: 8%;
       font-size: 3.6rem;
     }
 
     @mixin atMedium {
       font-size: 4.2rem;
-      top: 12%;
+      top: 5%;
     }
 
     @mixin atLarge {
       font-size: 4.8rem;
-      top: 15%;
+      top: 7%;
     }
-  }
-
+}
 
 }
