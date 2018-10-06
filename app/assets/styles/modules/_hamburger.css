@@ -3,6 +3,11 @@
   float: right;
   left: 88%;
   color: #25797c;
-  padding-right: 4%;
-  position: sticky;
+  padding-right: 3%;
+  padding-top: 1%;
+  position: static;
+
+  @mixin atSmall {
+    padding-right: 2%;
+  }
 }

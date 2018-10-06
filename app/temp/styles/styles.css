@@ -467,6 +467,14 @@ body {
   float: none;
   font-size: 2.9rem;
   position: relative;
+  padding-left: 65%;
+}
+
+@media (min-width: 530px) {
+
+  .nav-header nav ul {
+    padding-left: 80%;
+  }
 }
 
 @media (min-width: 800px) {
@@ -490,7 +498,8 @@ body {
 @media (min-width: 800px) {
 
   .nav-header nav ul li {
-    padding: 20px 0;
+    padding: 0 0;
+    padding-top: 20px;
   }
 }
 
@@ -534,6 +543,14 @@ body {
 .nav-header .active {
   display: inline-block;
   font-weight: 700;
+  border-bottom: none;
+}
+
+@media (min-width: 800px) {
+
+  .nav-header .active {
+    border-bottom: 1px solid #000;
+  }
 }
 
 .nav-header .toggle {
@@ -577,8 +594,9 @@ body {
 }
 
 .top-container h1 {
-  position: absolute;
-  top: 2%;
+  position: relative;
+  top: 60px;
+  margin-bottom: 20px;
   left: 0;
   width: 100%;
   text-align: center;
@@ -591,7 +609,7 @@ body {
 @media (min-width: 530px) {
 
   .top-container h1 {
-    top: 8%;
+    top: 100px;
     font-size: 3.6rem;
   }
 }
@@ -600,7 +618,6 @@ body {
 
   .top-container h1 {
     font-size: 4.2rem;
-    top: 5%;
   }
 }
 
@@ -608,13 +625,12 @@ body {
 
   .top-container h1 {
     font-size: 4.8rem;
-    top: 7%;
   }
 }
 
-.top-container p2 {
+.top-container p {
   position: absolute;
-  padding-top: 50px;
+  padding-top: 145px;
   left: 0;
   width: 100%;
   text-align: center;
@@ -625,24 +641,24 @@ body {
 
 @media (min-width: 530px) {
 
-  .top-container p2 {
-    padding-top: 120px;
+  .top-container p {
+    padding-top: 205px;
     font-size: 1.7rem;
   }
 }
 
 @media (min-width: 800px) {
 
-  .top-container p2 {
-    padding-top: 150px;
+  .top-container p {
+    padding-top: 215px;
     font-size: 1.8rem;
   }
 }
 
 @media (min-width: 1200px) {
 
-  .top-container p2 {
-    padding-top: 180px;
+  .top-container p {
+    padding-top: 250px;
     margin-top: 20px;
   }
 }
@@ -882,8 +898,15 @@ body {
 @media (min-width: 800px) {
 
   .top-container__portfolio {
+    padding: 0 0;
+    margin-bottom: 100px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .top-container__portfolio {
     padding: 0 20%;
-    margin-bottom: 50px;
   }
 }
 
@@ -892,13 +915,14 @@ body {
 }
 
 .top-container__portfolio h1 {
-  position: absolute;
-  top: 6%;
+  position: relative;
+  top: 60px;
+  margin-bottom: 20px;
   left: 0;
   width: 100%;
   text-align: center;
   font-size: 3rem;
-  color: #25797c;
+  color: red;
   font-family: 'raleway', sans-serif;
   font-weight: 300;
 }
@@ -906,7 +930,7 @@ body {
 @media (min-width: 530px) {
 
   .top-container__portfolio h1 {
-    top: 12%;
+    top: 100px;
     font-size: 3.6rem;
   }
 }
@@ -915,7 +939,6 @@ body {
 
   .top-container__portfolio h1 {
     font-size: 4.2rem;
-    top: 12%;
   }
 }
 
@@ -923,7 +946,6 @@ body {
 
   .top-container__portfolio h1 {
     font-size: 4.8rem;
-    top: 15%;
   }
 }
 
@@ -1151,9 +1173,16 @@ body {
   float: right;
   left: 88%;
   color: #25797c;
-  padding-right: 4%;
-  position: -webkit-sticky;
-  position: sticky;
+  padding-right: 3%;
+  padding-top: 1%;
+  position: static;
+}
+
+@media (min-width: 530px) {
+
+  .icon {
+    padding-right: 2%;
+  }
 }
 
 .contact-form {
@@ -1229,20 +1258,22 @@ body {
 }
 
 .top-container__portfolio h1 {
-  position: absolute;
-  top: 2%;
+  position: relative;
+  top: 60px;
+  margin-bottom: 20px;
   left: 0;
   width: 100%;
   text-align: center;
   font-size: 3rem;
   color: #25797c;
   font-family: 'raleway', sans-serif;
+  font-weight: 300;
 }
 
 @media (min-width: 530px) {
 
   .top-container__portfolio h1 {
-    top: 8%;
+    top: 100px;
     font-size: 3.6rem;
   }
 }
@@ -1251,7 +1282,6 @@ body {
 
   .top-container__portfolio h1 {
     font-size: 4.2rem;
-    top: 5%;
   }
 }
 
@@ -1259,7 +1289,6 @@ body {
 
   .top-container__portfolio h1 {
     font-size: 4.8rem;
-    top: 7%;
   }
 }
 
@@ -1281,8 +1310,9 @@ body {
 }
 
 .top-container__about h1 {
-  position: absolute;
-  top: 2%;
+  position: relative;
+  top: 60px;
+  margin-bottom: 20px;
   left: 0;
   width: 100%;
   text-align: center;
@@ -1295,7 +1325,7 @@ body {
 @media (min-width: 530px) {
 
   .top-container__about h1 {
-    top: 8%;
+    top: 100px;
     font-size: 3.6rem;
   }
 }
@@ -1304,7 +1334,6 @@ body {
 
   .top-container__about h1 {
     font-size: 4.2rem;
-    top: 5%;
   }
 }
 
@@ -1312,7 +1341,6 @@ body {
 
   .top-container__about h1 {
     font-size: 4.8rem;
-    top: 7%;
   }
 }
 
