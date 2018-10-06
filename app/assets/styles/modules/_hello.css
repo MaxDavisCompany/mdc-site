@@ -5,8 +5,7 @@
   padding: 10% 0;
 
   @mixin atMedium {
-  padding: 2% 0;
-  margin-bottom: 50px;
+  padding: 0 0;
   }
 
   &__contact {
@@ -26,9 +25,19 @@
   word-wrap: break-word;
   justify-self: center;
   padding: 0 50px;
+  font-size: 1.1rem;
+  font-weight: 300;
 
   @mixin atMedium {
   padding: 0 200px;
+  }
+
+  @mixin atLarge {
+    padding: 0 400px;
+  }
+
+  @mixin atExtraLarge {
+    padding: 0 750px;
   }
 
   }
@@ -36,6 +45,14 @@
   img {
     width: 150px;
     justify-self: center;
+  }
+
+  &--work {
+    margin-bottom: 0;
+
+    @mixin atSmall {
+      margin-bottom: 50px;
+    }
   }
 
 }

@@ -72,8 +72,5 @@
       padding: 0 35%;
     }
 
-    @mixin atMedium {
-      padding: 0 40%;
-    }
   }
 }

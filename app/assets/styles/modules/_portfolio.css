@@ -7,31 +7,32 @@
 
 
 
-  &__green {
-    background: #7dcc93;
+  &__first {
+    background: #4e5299;
   }
 
-  &__red {
-    background: #f76160;
+  &__second {
+    background: #d0bc03;
+    color: #000;
   }
 
-  &__purple {
-    background: #31355b;
+  &__third {
+    background: #933b2f;
     .btn {
       background: #4299ed;
       border: none;
     }
   }
 
-  &__yellow {
-    background: #f8c687;
+  &__fourth {
+    background: #9bd3ca;
     .btn {
       background: #005361;
     }
   }
 
   img {
-    width: 80%;
+    width: 90%;
 
 
     @mixin atMedium {
@@ -64,9 +65,8 @@
   }
 
   p {
-    font-family: raleway;
     font-size: 1rem;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 1.4;
     color: #fff;
     padding: 0 10%;
