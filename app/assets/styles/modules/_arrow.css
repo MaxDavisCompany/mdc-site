@@ -1,0 +1,17 @@
+.arrow {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  display: grid;
+  position: relative;
+
+
+  .fas {
+    grid-template-columns: 1fr;
+    text-align: center;
+    font-size: 90px;
+    color: #25797c;
+    cursor: pointer;
+    overflow-y: hidden;
+  }
+
+}

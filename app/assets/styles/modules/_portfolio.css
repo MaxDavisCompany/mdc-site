@@ -1,87 +1,67 @@
 .portfolio {
   display: grid;
   grid-template-columns: 1fr;
-  justify-items: center;
-  padding: 5% 0;
+  padding: 5% 5%;
+  background: #cceaea;
 
 
 
-
-  &__first {
-    background: #4e5299;
+  @mixin atMedium {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 150px;
+    padding-top: 50px;
+    grid-gap: 150px;
   }
 
-  &__second {
-    background: #d0bc03;
-    color: #000;
-  }
-
-  &__third {
-    background: #933b2f;
-    .btn {
-      background: #4299ed;
-      border: none;
-    }
-  }
-
-  &__fourth {
-    background: #9bd3ca;
-    .btn {
-      background: #005361;
-    }
-  }
 
   img {
-    width: 90%;
+    width: 100%;
+  }
 
+  .text-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    color: #25797c;
 
-    @mixin atMedium {
-      width: 35%;
-    }
   }
 
   h1 {
     font-family: raleway;
-    color: #fff;
-    font-size: 2rem;
-    text-align: center;
+    font-size: 1.2rem;
 
     @mixin atMedium {
-      font-size: 2.7rem;
+      font-size: 1.3rem;
+      padding: 10px 0;
     }
   }
 
   h5 {
     font-family: raleway;
-    color: #fff;
     position: relative;
-    padding-top: 10px;
-    bottom: 30px;
-    font-size: 1.2rem;
+    font-size: .8rem;
+    padding-bottom: 50px;
 
     @mixin atMedium {
-      padding-top: 3px;
+    padding-bottom: 25px;
     }
   }
+
 
   p {
-    font-size: 1rem;
+    font-size: .9rem;
     font-weight: 300;
     line-height: 1.4;
-    color: #fff;
-    padding: 0 10%;
-    text-align: center;
+    padding: 0 0;
+    padding-bottom: 50px;
 
     @mixin atMedium {
-      font-size: 1.2rem;
-      padding: 0 35%;
+      font-size: 1.1rem;
+      padding-bottom: 100px;
     }
   }
 
 
-.btn {
-  margin-top: 30px;
-}
+
 * {
   overflow-y: hidden;
 }

@@ -9,7 +9,7 @@
   }
 
   &__contact {
-    padding: 0 0;
+    padding: 10px;
 
   }
 
@@ -24,7 +24,7 @@
   text-align: center;
   word-wrap: break-word;
   justify-self: center;
-  padding: 0 50px;
+  padding: 0 0;
   font-size: 1.1rem;
   font-weight: 300;
 
@@ -45,6 +45,7 @@
   img {
     width: 150px;
     justify-self: center;
+    padding-bottom: 20px;
   }
 
   &--work {

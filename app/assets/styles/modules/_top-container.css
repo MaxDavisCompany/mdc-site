@@ -4,10 +4,9 @@
   grid-template-columns: 1fr;
   background: #cceaea;
 
-
   @mixin atMedium {
     padding: 0 0;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
   }
 
   @mixin atLarge {
@@ -70,6 +69,33 @@
       padding-top: 250px;
       margin-top: 20px;
 
+    }
+  }
+
+  .cloud-1 {
+    display: none;
+    position: relative;
+
+    @mixin atMedium {
+      display: block;
+      position: absolute;
+      width: 200px;
+      top: 250px;
+      left: 570px;
+      overflow-y: hidden;
+    }
+  }
+
+  .cloud-2 {
+    display: none;
+    position: relative;
+
+    @mixin atMedium {
+      display: block;
+      position: absolute;
+      width: 250px;
+      top: 350px;
+      right: 500px;
     }
   }
 

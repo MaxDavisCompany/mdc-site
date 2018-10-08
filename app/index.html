@@ -45,7 +45,6 @@ $(document).ready(function(){
         <ul>
           <li class="nav-item active"><a href="index.html">Home</a></li>
           <li class="nav-item"><a href="about.html">About</a></li>
-          <li class="nav-item"><a href="portfolio.html">Work</a></li>
           <li class="nav-item"><a href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -60,43 +59,103 @@ $(document).ready(function(){
       <p data-aos="slide-right" data-aos-duration="500" data-aos-delay="800">a web developer.</p>
 <picture>
   	<source media="(min-width: 800px)" srcset="assets/images/mdc-polar-theme-2.jpg">
-  	<img srcset="assets/images/mdc-polar-theme-2-mobile.png">
+  	<img srcset="assets/images/mdc-polar-theme-mobile.jpg">
   </picture>
 
+  <img class="cloud-1" data-aos="fade-up-left" data-aos-duration="3000" data-aos-delay="1000" src="assets/images/flat-cloud-1.png">
+
+    <img class="cloud-2" data-aos="fade-up-right" data-aos-duration="3000" data-aos-delay="1000" src="assets/images/flat-cloud-2.png">
     </section>
 
     <!--Hello Section-->
+    <!--
     <section class="hello">
-      <h1>Welcome.</h1>
+
       <p>I'm a web developer/designer based in Buffalo, New York. I have a passion for building clean websites and love designing for mobile devices.</p>
     </section>
+  -->
+      <!--arrow section-->
+  <section data-aos="fade" data-aos-offset= "0" data-aos-duration="1500" data-aos-delay="2000" class="arrow">
+      <i class="fas fa-angle-double-down"></i>
+  </section>
 
+  <script>
+  $(".fa-angle-double-down").click(function() {
+    $('html,body').animate({
+        scrollTop: $(".portfolio").offset().top},
+        'slow');
+});
+  </script>
 
+    <!--Hello Section-->
+    <!--
+    <section data-aos="fade" data-aos-duration="1400" data-aos-delay="200" class="hello hello--work">
+      <h1>What I've been up to.</h1>
+        <img src="assets/images/pencil.svg">
+      <p>Here's a selection of some recent work. To view my coding and other projects, you can visit me on my <a href="http://www.github.com/maxdaviscompany">GitHub</a></p>
+    </section>
 
-    <!--About Section-->
-    <section class="about">
-      <h1>What I can do.</h1>
-      <div data-aos="zoom-out" data-aos-duration="1500" data-aos-offset="200" class="photoshop">
-        <div>
-      <img src="assets/images/photoshop.png">
-      </div>
+  -->
+
+    <!--Portfolio Section-->
+    <section class="portfolio">
       <div>
-      <h3>Design what you want.</h3>
-      <p>I've been designing website layouts for years and have an eye for symmetry. I also love to create custom logos, icons, or any type of graphics to bring your site to life.</p>
-      </div>
-      </div>
-
-      <div data-aos="zoom-out" data-aos-duration="1500" data-aos-offset="200" class="coder">
-        <div>
-      <h3>Develop what you need.</h3>
-      <p>As a developer, I make sure your website runs across devices using the latest technologies available.</p>
-      </div>
-      <div>
-  <img src="assets/images/html.png">
-  </div>
+    <img data-aos="fade" data-aos-duration="1400" data-aos-delay="100" src="assets/images/website-generic-square.jpg">
+    <div class="text-content">
+    <h1>City Escape</h1>
+    <h5>Web Design/UI</h5>
+    <p>I implemented a modal when reservations are clicked, reveling elements when the user scrolls.</p>
     </div>
 
-    </section>
+
+
+    <img data-aos="fade" data-aos-duration="1400" data-aos-delay="100" src="assets/images/website-generic-square-2.jpg">
+    <div class="text-content">
+    <h1>Coffee & Co</h1>
+    <h5>Web Design / UI</h5>
+    <p>I worked on a fictional phone website featuring an old yellow Nokia phone.</p>
+
+
+  </div>
+</div>
+
+<div>
+    <img data-aos="fade" data-aos-duration="1400" data-aos-delay="100" src="assets/images/website-generic-square-3.jpg">
+    <div class="text-content">
+    <h1>Mobile Ice</h1>
+    <h5>Web Design / UI</h5>
+    <p>I challenged myself to recreate the Starbucks website from scratch.</p>
+
+
+  </div>
+
+
+
+
+
+    <img data-aos="fade" data-aos-duration="1400" data-aos-delay="100" src="assets/images/website-generic-square-4.jpg">
+    <div class="text-content">
+    <h1>Free Your Mind</h1>
+    <h5>Web Design / UI / App Design</h5>
+    <p>I'm currently working on a travel related app called Journey, mainly as a collaborative side project.</p>
+
+
+  </div>
+    </div>
+  </section>
+
+
+  <!--freelance section-->
+  <section data-aos="fade" data-aos-duration="1000" class="freelance">
+  <div>
+  <h1>I can help.</h1>
+  <h5>I'm currently available for freelance work.</h5>
+  <p>If you have a project that you want to get started or just fancy saying hi, then get in touch.</p>
+  <div class="message-button">
+  <a href="mailto:maxdaviscompany@gmail.com" class="btn btn__seafoam"><i class="far fa-envelope "></i>MESSAGE ME</a>
+  </div>
+  </div>
+  </section>
 
 
 <!--FOOTER -->
@@ -104,7 +163,9 @@ $(document).ready(function(){
   <div class="footer__contact-info">
   <a href="http://www.facebook.com/maxdaviscompany">facebook</a>
   <a href="http://www.instagram.com/shoegazecity">instagram</a>
+  <a href="https://www.linkedin.com/in/maxdaviscompany/">linkedin</a>
   <a href="mailto:maxdaviscompany@gmail.com">hire me</a>
+
 </div>
 <div class="footer__copyright">
   &copy;2018 Max Davis. All rights reserved.
