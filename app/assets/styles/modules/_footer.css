@@ -1,31 +1,30 @@
 .footer {
-  background: #cceaea;
+  background: #ADC9D3;
   padding: 3% 2%;
 
-  @mixin atSmall {
 
-  }
 
-  @mixin atMedium {
-    padding: 3% 25%;
-  }
 
   &__contact-info {
-    display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 0 5%;
+    display: none;
 
     @mixin atMedium {
-      padding: 3% 15%;
+      padding: 3% 100px;
+      display: grid;
     }
 
     @mixin atLarge {
-      padding: 3% 20%;
+      padding: 3% 25%;
     }
 
+    @mixin atExtraLarge {
+      padding: 3% 30%;
+    }
 
     a {
-      color: #25797c;
+      color: #445053;
       font-size: 1.2rem;
       font-family: raleway;
       text-align: center;
@@ -34,6 +33,22 @@
     a:hover {
       color: #000;
       text-decoration: none;
+    }
+  }
+
+  &__icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 2.3rem;
+    text-align: center;
+    color: #445053;
+    overflow-y: hidden;
+
+    @mixin atMedium {
+      display: none;
+    }
+    a {
+      color: inherit;
     }
   }
 

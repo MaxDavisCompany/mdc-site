@@ -2,7 +2,7 @@
   padding: 0 0;
   display: grid;
   grid-template-columns: 1fr;
-  background: #cceaea;
+  background: #72BFDA;
 
 
   h1 {
@@ -12,9 +12,10 @@
     width: 100%;
     text-align: center;
     font-size: 3rem;
-    color: #25797c;
+    color: #fff;
     font-family: 'raleway', sans-serif;
     font-weight: 300;
+    z-index: 6;
 
     @mixin atSmall {
       font-size: 3.6rem;
@@ -31,5 +32,35 @@
 
   img {
     width: 50%;
+  }
+
+  .balloon-1 {
+    display: none;
+    position: relative;
+
+    @mixin atLarge {
+      display: block;
+      position: absolute;
+      width: 250px;
+      left: 540px;
+      top: 50px;
+      overflow-y: hidden;
+      z-index: 6;
+    }
+
+  }
+
+  .balloon-2 {
+    display: none;
+    position: relative;
+
+    @mixin atLarge {
+      display: block;
+      position: absolute;
+      width: 200px;
+      top: 120px;
+      right: 500px;
+      z-index: 6;
+    }
   }
 }

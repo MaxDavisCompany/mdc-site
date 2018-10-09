@@ -1,6 +1,6 @@
 .nav-header {
   padding-top: 4px;
-  background-color: #cceaea;
+  background-color: #72BFDA;
   z-index: 5;
 
   nav {
@@ -12,7 +12,7 @@
 
     @mixin atMedium {
       position: fixed;
-      background: #cceaea;
+      background: #72BFDA;
     }
   }
 
@@ -22,7 +22,7 @@
 
   nav ul {
     display: none;
-    background: #fff;
+    background: #72BFDA;
     float: none;
     font-size: 2.9rem;
     position: relative;
@@ -60,7 +60,7 @@
   nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
-    color: #25797c;
+    color: #fff;
     font-family: raleway;
     font-size: 1.2rem;
     cursor: pointer;
@@ -71,6 +71,7 @@
     padding: 0 0;
 
 
+
     @mixin atMedium {
       position: static;
       left: 0;
@@ -78,6 +79,7 @@
       margin: 0;
       display: inline-block;
       padding: 0;
+    
 
     }
   }
@@ -90,11 +92,11 @@
 
   .active {
     display: inline-block;
-    font-weight: 700;
+    font-weight: 900;
     border-bottom: none;
 
     @mixin atMedium {
-      border-bottom: 1px solid #000;
+  border-bottom: 1px solid #fff;
     }
   }
 
@@ -107,6 +109,5 @@
       display: block;
     }
   }
-
 
 }

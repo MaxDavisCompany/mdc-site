@@ -1,5 +1,5 @@
 .about {
-  background: #cceaea;
+  background: #ADC9D3;
   padding: 0 5%;
   overflow-y: hidden;
   display: grid;
@@ -17,12 +17,12 @@ h1 {
   grid-template-columns: 1fr;
   text-align: center;
   font-size: 2.8rem;
-  color: #25797c;
+  color: #445053;
   font-weight: 300;
 }
 
 h3 {
-  color: #25797c;
+  color: #445053;
   font-family: raleway;
   text-align: center;
   font-weight: 300;
@@ -36,6 +36,7 @@ p {
 font-size: 1.1rem;
 font-family: raleway;
 line-height: 1.7;
+color: #445053;
 }
 
 .photoshop {

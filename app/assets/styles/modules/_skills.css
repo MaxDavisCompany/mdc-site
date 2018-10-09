@@ -8,11 +8,11 @@
     margin-top: 50px;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    padding: 0 20px;
+    padding: 50px 20px;
 
     @mixin atMedium {
       grid-template-columns: repeat(2, 1fr);
-      padding: 0 200px;
+      padding: 50px 200px;
     }
 
     img {
@@ -54,6 +54,7 @@
    grid-gap: 10px;
    padding: 0 2%;
    overflow-y: hidden;
+   text-align: center;
 
    @mixin atSmall {
    grid-template-columns: repeat(2, 1fr);
@@ -97,6 +98,47 @@
   p {
     text-align: center;
     font-family: raleway;
+  }
+
+  .fa-rocket {
+    font-size: 3rem;
+    overflow: hidden;
+    border: 1px solid #445053;
+    background: #445053;
+    padding: 30px;
+    border-radius: 100px;
+    color: #fff;
+  }
+
+  .fa-fighter-jet {
+    font-size: 3rem;
+    overflow: hidden;
+    border: 1px solid #445053;
+    background: #445053;
+    padding: 35px 30px;
+    border-radius: 250px;
+    color: #fff;
+
+  }
+
+  .fa-mobile-alt {
+    font-size: 3rem;
+    overflow: hidden;
+    border: 1px solid #445053;
+    background: #445053;
+    padding: 30px 40px;
+    border-radius: 200px;
+    color: #fff;
+  }
+
+  .fa-lightbulb {
+    font-size: 3rem;
+    overflow: hidden;
+    border: 1px solid #445053;
+    background: #445053;
+    padding: 30px 35px;
+    border-radius: 100px;
+    color: #fff;
   }
 }
 
